@@ -10,6 +10,8 @@ app.use(express.static('public'));
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 
 // Routes
 const routes = require('./routes/index');
